@@ -14,7 +14,7 @@ const HeaderStyles = styled.header`
   border-bottom: 1px solid ${props => props.theme.libraBlue};
 
   @media ${props => props.theme.sm} {
-    height: 60px;
+    height: 85px;
   }
 `
 
@@ -24,6 +24,13 @@ const Div = styled.div`
   height: 100%;
   justify-content: space-between;
   align-items: center;
+
+  @media ${props => props.theme.sm} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const Logo = styled(Link)`
@@ -31,6 +38,17 @@ const Logo = styled(Link)`
   font-size: 3rem;
   color: white;
   width: 35%;
+
+  @media ${props => props.theme.md} {
+    width: 30%;
+  }
+
+  @media ${props => props.theme.sm} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
 
   .logo {
     width: 25%;
@@ -51,6 +69,14 @@ const Nav = styled.div`
   margin: 0;
   padding: 0;
 
+  @media ${props => props.theme.md} {
+    width: 70%;
+  }
+
+  @media ${props => props.theme.sm} {
+    width: 100%;
+  }
+
   ul {
     width: 100%;
     height: 100%;
@@ -69,6 +95,14 @@ const Nav = styled.div`
       justify-content: center;
       align-items: center;
 
+      @media ${props => props.theme.md} {
+        height: 55%;
+      }
+
+      @media ${props => props.theme.sm} {
+        height: 1.8rem;
+      }
+
       .active {
         cursor: pointer;
         background: ${props => props.theme.libraBlue};
@@ -76,6 +110,11 @@ const Nav = styled.div`
         height: 44%;
         text-decoration: underline;
         border-radius: ${props => props.theme.radius};
+
+        @media ${props => props.theme.sm} {
+          height: 1.8rem;
+          border-radius: 2px;
+        }
       }
     }
   }
@@ -90,12 +129,28 @@ const LinkStyles = styled(Link)`
 
   transition: all ${props => props.theme.transitionDuration} linear;
 
+  @media ${props => props.theme.md} {
+    font-size: 1.4rem;
+  }
+
+  @media ${props => props.theme.sm} {
+    font-size: 1rem;
+    padding: 0 0.6rem;
+    height: 75%;
+  }
+
   &:hover {
     cursor: pointer;
     background: ${props => props.theme.libraBlue};
     color: white;
     height: 44%;
     border-radius: ${props => props.theme.radius};
+
+    @media ${props => props.theme.sm} {
+      font-size: 1rem;
+      padding: 0 0.6rem;
+      height: 75%;
+    }
   }
 `
 

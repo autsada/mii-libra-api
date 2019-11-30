@@ -51,6 +51,10 @@ const GlobalStyle = createGlobalStyle`
       font-family: ${props => props.theme.fontFamily};
       font-weight: 400;
       color: ${props => props.theme.black};
+
+      @media ${props => props.theme.sm} {
+        font-size: 1rem;
+      }
    }
 `
 
@@ -58,11 +62,35 @@ const Page = styled.div`
   margin: 0;
   padding: 0;
   margin-bottom: 6rem;
+
+  @media ${props => props.theme.lg} {
+    margin-bottom: 4rem;
+  }
+
+  @media ${props => props.theme.sm} {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 `
 
 const Content = styled.main`
   width: 70%;
   margin: 0 auto;
+
+  @media ${props => props.theme.lg} {
+    width: 80%;
+    height: auto;
+  }
+
+  @media ${props => props.theme.md} {
+    width: 85%;
+    height: auto;
+  }
+
+  @media ${props => props.theme.sm} {
+    width: 95%;
+    height: auto;
+  }
 `
 
 const Layout = ({ children }) => {
