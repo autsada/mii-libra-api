@@ -114,6 +114,7 @@ const Nav = styled.div`
         @media ${props => props.theme.sm} {
           height: 1.6rem;
           border-radius: 2px;
+          padding: 0 0.6rem;
         }
       }
     }
