@@ -100,7 +100,7 @@ const Nav = styled.div`
       }
 
       @media ${props => props.theme.sm} {
-        height: 1.8rem;
+        height: 1.6rem;
       }
 
       .active {
@@ -112,7 +112,7 @@ const Nav = styled.div`
         border-radius: ${props => props.theme.radius};
 
         @media ${props => props.theme.sm} {
-          height: 1.8rem;
+          height: 1.6rem;
           border-radius: 2px;
         }
       }
@@ -136,7 +136,7 @@ const LinkStyles = styled(Link)`
   @media ${props => props.theme.sm} {
     font-size: 1rem;
     padding: 0 0.6rem;
-    height: 75%;
+    height: 1.6rem;
   }
 
   &:hover {
@@ -149,7 +149,7 @@ const LinkStyles = styled(Link)`
     @media ${props => props.theme.sm} {
       font-size: 1rem;
       padding: 0 0.6rem;
-      height: 75%;
+      height: 1.6rem;
     }
   }
 `
