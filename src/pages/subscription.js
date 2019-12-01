@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Div from "../layouts/pageStyle"
 
-const QueryPage = ({ data }) => {
+const SubscriptionPage = ({ data }) => {
   const {
     node: {
       title,
@@ -21,7 +21,7 @@ const QueryPage = ({ data }) => {
   )
 }
 
-export default QueryPage
+export default SubscriptionPage
 
 export const query = graphql`
   query {

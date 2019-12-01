@@ -124,8 +124,8 @@ const Nav = styled.div`
         background: ${props => props.theme.libraBlue};
         color: white;
         /* text-decoration: underline; */
-        height: 100%;
-        line-height: 100%;
+        /* height: 100%;
+        line-height: 100%; */
         border-radius: ${props => props.theme.radius};
 
         @media ${props => props.theme.smLsc} {
@@ -160,8 +160,9 @@ const LinkStyles = styled(Link)`
   }
 
   @media ${props => props.theme.sm} {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0 0.6rem;
+    font-size: 1rem;
     height: 70%;
   }
 
@@ -213,17 +214,22 @@ const Header = () => {
             </li>
             <li>
               <LinkStyles activeClassName="active" to="/query">
-                Query API
+                Query
               </LinkStyles>
             </li>
             <li>
               <LinkStyles activeClassName="active" to="/mutation">
-                Mutation API
+                Mutation
               </LinkStyles>
             </li>
             <li>
               <LinkStyles activeClassName="active" to="/subscription">
-                Subscription API
+                Subscription
+              </LinkStyles>
+            </li>
+            <li>
+              <LinkStyles activeClassName="active" to="/playground">
+                Playground
               </LinkStyles>
             </li>
           </ul>

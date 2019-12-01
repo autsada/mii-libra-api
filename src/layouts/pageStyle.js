@@ -3,6 +3,7 @@ import styled from "styled-components"
 const Div = styled.div`
   a {
     text-decoration: none;
+    color: white;
   }
 
   .endpoint-title {
@@ -135,6 +136,20 @@ const Div = styled.div`
         font-size: 0.5rem;
       }
     }
+  }
+  p {
+    .format {
+      font-style: italic;
+      color: ${props => props.theme.grey};
+    }
+  }
+
+  .image-title {
+    font-weight: bold;
+  }
+
+  .image {
+    margin-top: -2rem;
   }
 `
 
