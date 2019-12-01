@@ -14,7 +14,7 @@ const HeaderStyles = styled.header`
   border-bottom: 1px solid ${props => props.theme.libraBlue};
 
   @media ${props => props.theme.sm} {
-    height: 85px;
+    height: 85%;
   }
 `
 
@@ -30,6 +30,7 @@ const Div = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
   }
 `
 
@@ -80,10 +81,14 @@ const Nav = styled.div`
 
   @media ${props => props.theme.smLsc} {
     width: 70%;
+    height: 40px;
+    line-height: 40px;
   }
 
   @media ${props => props.theme.sm} {
     width: 90%;
+    height: 40px;
+    line-height: 40px;
   }
 
   ul {
@@ -106,8 +111,12 @@ const Nav = styled.div`
         height: 25%;
       }
 
+      @media ${props => props.theme.smLsc} {
+        height: 50%;
+      }
+
       @media ${props => props.theme.sm} {
-        height: 70%;
+        height: 50%;
       }
 
       .active {
@@ -115,9 +124,13 @@ const Nav = styled.div`
         background: ${props => props.theme.libraBlue};
         color: white;
         /* text-decoration: underline; */
-        height: 20%;
-        line-height: 20%;
+        height: 100%;
+        line-height: 100%;
         border-radius: ${props => props.theme.radius};
+
+        @media ${props => props.theme.smLsc} {
+          border-radius: 2px;
+        }
 
         @media ${props => props.theme.sm} {
           border-radius: 2px;

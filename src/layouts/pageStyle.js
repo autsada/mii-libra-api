@@ -35,7 +35,7 @@ const Div = styled.div`
     }
 
     @media ${props => props.theme.sm} {
-      width: 55%;
+      width: 60%;
       height: 3rem;
       padding: 0.3rem 0.8rem;
       margin-top: -0.7rem;
@@ -43,6 +43,7 @@ const Div = styled.div`
   }
 
   ul {
+    padding-left: 20px;
     li {
       .strong {
         font-weight: bold;
@@ -127,7 +128,7 @@ const Div = styled.div`
       }
 
       @media ${props => props.theme.smLsc} {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
 
       @media ${props => props.theme.sm} {
