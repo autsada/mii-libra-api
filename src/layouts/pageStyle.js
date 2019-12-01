@@ -28,6 +28,12 @@ const Div = styled.div`
       width: 50%;
     }
 
+    @media ${props => props.theme.smLsc} {
+      width: 40%;
+      height: 3rem;
+      margin-top: -1rem;
+    }
+
     @media ${props => props.theme.sm} {
       width: 55%;
       height: 3rem;
@@ -105,10 +111,12 @@ const Div = styled.div`
 
     @media ${props => props.theme.md} {
       margin-top: -1rem;
+      margin-bottom: 2rem;
     }
 
     @media ${props => props.theme.sm} {
       margin-top: -0.8rem;
+      margin-bottom: 2rem;
     }
 
     pre {
@@ -116,6 +124,10 @@ const Div = styled.div`
 
       @media ${props => props.theme.md} {
         font-size: 1.2rem;
+      }
+
+      @media ${props => props.theme.smLsc} {
+        font-size: 1rem;
       }
 
       @media ${props => props.theme.sm} {

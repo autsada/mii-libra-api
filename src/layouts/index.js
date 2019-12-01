@@ -27,6 +27,7 @@ const theme = {
   lightBlue: "#1976d2",
   darkBlue: "#3b5998",
   sm: "(max-width: 600px)",
+  smLsc: "(max-width: 750px)",
   md: "(max-width: 960px)",
   lg: "(max-width: 1025px)",
   xl: "(min-width: 1026px)",
@@ -51,6 +52,10 @@ const GlobalStyle = createGlobalStyle`
       font-family: ${props => props.theme.fontFamily};
       font-weight: 400;
       color: ${props => props.theme.black};
+
+      @media ${props => props.theme.smLsc} {
+        font-size: 1.2rem;
+      }
 
       @media ${props => props.theme.sm} {
         font-size: 1rem;

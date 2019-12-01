@@ -43,6 +43,10 @@ const Logo = styled(Link)`
     width: 30%;
   }
 
+  @media ${props => props.theme.smLsc} {
+    width: 30%;
+  }
+
   @media ${props => props.theme.sm} {
     display: flex;
     justify-content: center;
@@ -73,6 +77,10 @@ const Nav = styled.div`
     width: 70%;
   }
 
+  @media ${props => props.theme.smLsc} {
+    width: 70%;
+  }
+
   @media ${props => props.theme.sm} {
     width: 100%;
   }
@@ -88,31 +96,27 @@ const Nav = styled.div`
 
     li {
       list-style: none;
-      height: 60%;
-      margin: auto;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      height: 30%;
+      display: table;
+      text-align: center;
 
       @media ${props => props.theme.md} {
-        height: 55%;
+        height: 25%;
       }
 
       @media ${props => props.theme.sm} {
-        height: 1.6rem;
+        height: 20%;
       }
 
       .active {
         cursor: pointer;
         background: ${props => props.theme.libraBlue};
         color: white;
-        height: 44%;
         text-decoration: underline;
         border-radius: ${props => props.theme.radius};
 
         @media ${props => props.theme.sm} {
-          height: 1.6rem;
+          height: 20%;
           border-radius: 2px;
           padding: 0 0.6rem;
         }
@@ -125,8 +129,9 @@ const LinkStyles = styled(Link)`
   text-decoration: none;
   color: ${props => props.theme.libraBlue};
   font-weight: bold;
-  height: 40%;
   padding: 0 1rem;
+  display: table-cell;
+  vertical-align: middle;
 
   transition: all ${props => props.theme.transitionDuration} linear;
 
@@ -134,23 +139,27 @@ const LinkStyles = styled(Link)`
     font-size: 1.4rem;
   }
 
+  @media ${props => props.theme.smLsc} {
+    font-size: 1.1rem;
+  }
+
   @media ${props => props.theme.sm} {
     font-size: 1rem;
     padding: 0 0.6rem;
-    height: 1.6rem;
+    height: 20%;
   }
 
   &:hover {
     cursor: pointer;
     background: ${props => props.theme.libraBlue};
     color: white;
-    height: 44%;
+    height: 35%;
     border-radius: ${props => props.theme.radius};
 
     @media ${props => props.theme.sm} {
       font-size: 1rem;
       padding: 0 0.6rem;
-      height: 1.6rem;
+      height: 20%;
     }
   }
 `
