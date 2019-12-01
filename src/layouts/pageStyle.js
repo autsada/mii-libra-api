@@ -131,7 +131,7 @@ const Div = styled.div`
       }
 
       @media ${props => props.theme.sm} {
-        font-size: 0.56rem;
+        font-size: 0.5rem;
       }
     }
   }

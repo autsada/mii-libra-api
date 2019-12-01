@@ -69,7 +69,8 @@ const Nav = styled.div`
   display: flex;
   align-items: center;
   width: 65%;
-  height: 100%;
+  height: 100px;
+  line-height: 100px;
   margin: 0;
   padding: 0;
 
@@ -82,7 +83,7 @@ const Nav = styled.div`
   }
 
   @media ${props => props.theme.sm} {
-    width: 100%;
+    width: 90%;
   }
 
   ul {
@@ -97,6 +98,7 @@ const Nav = styled.div`
     li {
       list-style: none;
       height: 30%;
+      line-height: 20%;
       display: table;
       text-align: center;
 
@@ -105,20 +107,20 @@ const Nav = styled.div`
       }
 
       @media ${props => props.theme.sm} {
-        height: 20%;
+        height: 70%;
       }
 
       .active {
         cursor: pointer;
         background: ${props => props.theme.libraBlue};
         color: white;
-        text-decoration: underline;
+        /* text-decoration: underline; */
+        height: 20%;
+        line-height: 20%;
         border-radius: ${props => props.theme.radius};
 
         @media ${props => props.theme.sm} {
-          height: 20%;
           border-radius: 2px;
-          padding: 0 0.6rem;
         }
       }
     }
@@ -132,6 +134,7 @@ const LinkStyles = styled(Link)`
   padding: 0 1rem;
   display: table-cell;
   vertical-align: middle;
+  height: 25%;
 
   transition: all ${props => props.theme.transitionDuration} linear;
 
@@ -144,16 +147,17 @@ const LinkStyles = styled(Link)`
   }
 
   @media ${props => props.theme.sm} {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0 0.6rem;
-    height: 20%;
+    height: 70%;
   }
 
   &:hover {
     cursor: pointer;
     background: ${props => props.theme.libraBlue};
     color: white;
-    height: 35%;
+    height: 30%;
+    line-height: 30%;
     border-radius: ${props => props.theme.radius};
 
     @media ${props => props.theme.sm} {
