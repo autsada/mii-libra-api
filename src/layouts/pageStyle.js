@@ -3,6 +3,9 @@ import styled from "styled-components"
 const Div = styled.div`
   a {
     text-decoration: none;
+  }
+
+  .endpoint-url {
     color: white;
   }
 
