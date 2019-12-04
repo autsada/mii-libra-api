@@ -55,6 +55,7 @@ const Div = styled.div`
 
       .note {
         font-style: italic;
+        color: ${props => props.theme.grey};
       }
     }
   }

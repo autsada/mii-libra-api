@@ -123,9 +123,6 @@ const Nav = styled.div`
         cursor: pointer;
         background: ${props => props.theme.libraBlue};
         color: white;
-        /* text-decoration: underline; */
-        /* height: 100%;
-        line-height: 100%; */
         border-radius: ${props => props.theme.radius};
 
         @media ${props => props.theme.smLsc} {
